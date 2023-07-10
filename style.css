@@ -8,6 +8,7 @@ body {
   line-height: 16px;
   text-align: center;
   vertical-align: center;
+  margin: 0;
 }
 
 h1 {
@@ -15,13 +16,8 @@ h1 {
   font-family: 'Cousine', monospace;
   font-size: 42px;
   line-height: 24px;
-  right:30px;
-  bottom: -10px;
-  text-align: right;
-  vertical-align: bottom;
-  display: inline;
-  position: relative;
-
+  margin-top: 0;
+  padding-top: 24px;
 }
 
 h2 {
@@ -42,6 +38,14 @@ a {
   color: #171717;
   text-decoration: none;
   display: block;
+}
+
+#social i {
+  font-size: 24px;
+}
+
+#social i:hover {
+  color: grey;
 }
 
 .list-inline {
@@ -66,10 +70,15 @@ img.gallery {
   margin-bottom: 300px;
   margin: auto;
   height: 300px;
+  width: 100%;
   background-image: url('images/Profile_pic.jfif');
   background-repeat: no-repeat;
   background-position: center;
-  vertical-align: bottom;
+}
+
+#title-card p {
+  color:#171717;
+  margin-top: 16px;
 }
 
 ul.cubes {
@@ -106,10 +115,8 @@ ul.cubes {
   padding: 0;
 }
 
-a:hover{
-  background-image: url('images/OF.png');
-  width: 20px;
-  height: 20px;
+.container {
+  margin: auto;
 }
 
 @media (max-width: 960px) {
