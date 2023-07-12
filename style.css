@@ -14,10 +14,11 @@ body {
 h1 {
   color: #DA0037;
   font-family: 'Cousine', monospace;
-  font-size: 42px;
+  font-size: 56px;
   line-height: 24px;
   margin-top: 0;
-  padding-top: 24px;
+  padding-top: 48px;
+  text-shadow: 2px 2px 10px black;
 }
 
 h2 {
@@ -41,14 +42,15 @@ a {
 }
 
 #social i {
-  font-size: 24px;
+  font-size: 36px;
+  padding: 0 16px 0 16px
 }
 
 #social i:hover {
   color: grey;
 }
 
-.list-inline {
+.list-item {
   list-style: none;
   padding-left: 0px;
   display: inline-block;
@@ -73,15 +75,18 @@ img.gallery {
   width: 100%;
   background-image: url('images/Profile_pic.jfif');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0% 20%;
+  background-size: cover;
 }
 
 #title-card p {
   color:#171717;
   margin-top: 16px;
+  font-weight: 800;
 }
 
-ul.cubes {
+/* check */
+.card-language {
   width: 100px;
   height: 100px;
   font-size: 16px;
@@ -89,14 +94,12 @@ ul.cubes {
   vertical-align: bottom;
   background-color: darkgrey;
   border-radius: 5px;
-  box-shadow: 0 0 2px ;
+  box-shadow: 0 0 2px;
 }
 
-.center {
+.cards {
+  display: grid 1fr 1fr 1fr 1fr;
   text-align: center;
-}
-
-.bottom {
   vertical-align: bottom;
 }
 
