@@ -62,10 +62,31 @@ a {
   position: relative;
 }
 
-img.gallery {
+.gallery {
+  overflow-x: scroll;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.gallery img {
   width: auto;
-  height: 200px;
+  height: 350px;
+  object-fit: contain;
   margin: 16px;
+  animation: slide 40s linear infinite;
+}
+
+.gallery:hover img{
+  animation:none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
+  }
 }
 
 #title-card {
@@ -88,6 +109,7 @@ img.gallery {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   justify-content: space-around;
 }
